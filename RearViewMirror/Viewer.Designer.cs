@@ -31,15 +31,16 @@ namespace RearViewMirror
         /// </summary>
         private void InitializeComponent()
         {
-            this.cameraWindow = new CameraWindow();
+            this.cameraWindow = new motion.CameraWindow();
             this.SuspendLayout();
             // 
             // cameraWindow
             // 
             this.cameraWindow.Camera = null;
-            this.cameraWindow.Location = new System.Drawing.Point(13, 13);
+            this.cameraWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cameraWindow.Location = new System.Drawing.Point(0, 0);
             this.cameraWindow.Name = "cameraWindow";
-            this.cameraWindow.Size = new System.Drawing.Size(267, 218);
+            this.cameraWindow.Size = new System.Drawing.Size(292, 249);
             this.cameraWindow.TabIndex = 0;
             this.cameraWindow.TabStop = false;
             // 
