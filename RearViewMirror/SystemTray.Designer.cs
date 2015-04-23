@@ -49,7 +49,6 @@ namespace RearViewMirror
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logViewerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trayContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,13 +72,13 @@ namespace RearViewMirror
             this.helpToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.trayContextMenu.Name = "trayContextMenu";
-            this.trayContextMenu.Size = new System.Drawing.Size(153, 186);
+            this.trayContextMenu.Size = new System.Drawing.Size(149, 164);
             this.trayContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.trayContextMenu_Opening);
             // 
             // sourcesToolStripMenuItem
             // 
             this.sourcesToolStripMenuItem.Name = "sourcesToolStripMenuItem";
-            this.sourcesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sourcesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.sourcesToolStripMenuItem.Text = "Video Sources";
             // 
             // newSourceToolStripMenuItem
@@ -88,7 +87,7 @@ namespace RearViewMirror
             this.cameraToolStripMenuItem,
             this.mjpegToolStripMenuItem});
             this.newSourceToolStripMenuItem.Name = "newSourceToolStripMenuItem";
-            this.newSourceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newSourceToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.newSourceToolStripMenuItem.Text = "New Source";
             // 
             // cameraToolStripMenuItem
@@ -113,7 +112,7 @@ namespace RearViewMirror
             this.connectionsToolStripMenuItem,
             this.cameraURLsToolStripMenuItem});
             this.videoServerToolStripMenuItem.Name = "videoServerToolStripMenuItem";
-            this.videoServerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.videoServerToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.videoServerToolStripMenuItem.Text = "Video Server";
             // 
             // toggleServerToolStripMenuItem
@@ -147,67 +146,59 @@ namespace RearViewMirror
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // showAllToolStripMenuItem
             // 
             this.showAllToolStripMenuItem.Name = "showAllToolStripMenuItem";
-            this.showAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showAllToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.showAllToolStripMenuItem.Text = "Show All";
             this.showAllToolStripMenuItem.Click += new System.EventHandler(this.showAllToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(145, 6);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem1,
             this.donateToolStripMenuItem,
-            this.logViewerToolStripMenuItem,
-            this.checkForUpdatesToolStripMenuItem});
+            this.logViewerToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
             // donateToolStripMenuItem
             // 
             this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
-            this.donateToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.donateToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.donateToolStripMenuItem.Text = "Donate";
             this.donateToolStripMenuItem.Click += new System.EventHandler(this.donateToolStripMenuItem_Click);
             // 
             // logViewerToolStripMenuItem
             // 
             this.logViewerToolStripMenuItem.Name = "logViewerToolStripMenuItem";
-            this.logViewerToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.logViewerToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.logViewerToolStripMenuItem.Text = "Log Viewer";
             this.logViewerToolStripMenuItem.Click += new System.EventHandler(this.logViewerToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // checkForUpdatesToolStripMenuItem
-            // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
             // SystemTray
             // 
@@ -218,6 +209,7 @@ namespace RearViewMirror
             this.ShowInTaskbar = false;
             this.Text = "SystemTray";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.SystemTray_Load);
             this.trayContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -244,6 +236,5 @@ namespace RearViewMirror
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem logViewerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
     }
 }

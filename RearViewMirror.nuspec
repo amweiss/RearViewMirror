@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>RearViewMirror</id>
+        <version>1.0.1</version>
+        <title>Rear View Mirror</title>
+        <authors>Sumit Khanna,Adam Weiss</authors>
+        <owners>Sumit Khanna</owners>
+        <projectUrl>http://rearviewmirror.cc/</projectUrl>
+        <iconUrl>http://rearviewmirror.cc/favicon.ico</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
+        <description>This is a simple application that connects to a web camera device or MJPEG enabled webcam and displays a window whenever motion is detected. It was intended to be a "Rear View Mirror" in my cubical so</description>
+    </metadata>
+    <files>
+        <file src="RearViewMirror\bin\Release\en\*.dll" target="lib\net45\en" />
+        <file src="RearViewMirror\bin\Release\RearViewMirror.exe" target="lib\net45" />
+        <file src="RearViewMirror\bin\Release\*.dll" target="lib\net45" />
+    </files>
+</package>
