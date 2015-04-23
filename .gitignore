@@ -1,0 +1,6 @@
+*.nupkg
+packages/
+RearViewMirror/
+motion/
+*.suo
+UpgradeLog.htm
