@@ -480,10 +480,9 @@ namespace RearViewMirror
         #endregion
 
         private async void SystemTray_Load(object sender, EventArgs e) {
-            //TODO: need a real URL for releases to be hosted from
-            //using (var mgr = new UpdateManager("http://rearviewmirror.cc/Releases", "RearViewMirror", FrameworkVersion.Net45)) {
-            //    await mgr.UpdateApp();
-            //}
+            using (var mgr = new UpdateManager("http://amweiss.github.io/RearViewMirror/Releases", "RearViewMirror", FrameworkVersion.Net45)) {
+                await mgr.UpdateApp();
+            }
         }
 
 
