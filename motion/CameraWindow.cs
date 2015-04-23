@@ -130,7 +130,7 @@ namespace motion
                     if ( camera.LastFrame != null )
                     {
                         var image = camera.LastFrame;
-                        image.RotateFlip(Rotation);
+                        image.RotateFlip(RotateFlipType.Rotate180FlipY);
                         g.DrawImage(image, rc.X + 1, rc.Y + 1, rc.Width - 2, rc.Height - 2 );
                         firstFrame = false;
                     }
